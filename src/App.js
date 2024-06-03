@@ -26,13 +26,6 @@ function App(){
   
 }
 
-function Title(){
-  return (
-    <div className="App-title">
-      <h1>WetFeed</h1>
-    </div>
-  );
-}
 
 function Articles({Image,Title}){
   return(
@@ -58,7 +51,13 @@ function Trend({Image, Title}){
   );
 }
 
-
+function Title(){
+  return (
+    <div className="App-title">
+      <h1>WetFeed</h1>
+    </div>
+  );
+}
 
 function Header() {
   return(

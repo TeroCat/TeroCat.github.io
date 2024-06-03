@@ -119,6 +119,12 @@
 th {
   vertical-align: top;
   font-size: 2em;
+  border-bottom: solid;
+}
+
+Table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
 
