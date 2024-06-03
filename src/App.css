@@ -1,160 +1,42 @@
-* {
-  box-sizing: border-box;
-}
-
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  margin: auto;
-  overflow: hidden;
-  width: 80%;
-  align-content: center;
 }
 
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.topnav {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  justify-content: left;
-  font-size: calc(10px + 1vmin);
-  color: white;
-  max-width: 100%;
-}
-
-.topnav a {
-  border: 1em;
-  margin: .2em;
-  padding: .3em;
-  flex-direction: row;
-  text-decoration: none;
-  color: white;
-  align-items: center;
-
-}
-
-.App-title {
-  display: flex;
-  color: #F4511E;
-  background-color: white;
-  max-width: 100rem;
-  margin: .3em;
-  align-items: center;
-  padding-left: .5em;
-}
-
-.App-title h1 {
-  margin: 0em;
-  padding-left: .0em;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
 
-.column {
-  float: left;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #999;
-  border-top-width: 8px;
-  background-color: #fff;
-  margin: 1%;
-}
-
-.column.side {
-  width: 24%;
-  padding: 1em;
-  margin-left: 0;
-}
-
-.column.middle {
-  width: 73%;
-  padding: 1em;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-
-  .column.side,
-  .column.middle {
-    width: 100%;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
   }
 }
 
-.TitleBar {
-  text-align: center;
-  display: flex;
+.card {
+  padding: 2em;
 }
 
-th {
-  vertical-align: top;
-  font-size: 2em;
-  border-bottom: solid;
-}
-
-Table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-
-
-img {
-  display: block;
-  object-fit: cover;
-}
-
-img.Article {
-  width: 4em;
-}
-
-img.Trend {
-  height: 13em;
-  width: 100%;
-}
-
-span {
-  display: block;
-}
-
-.row {
-  color: black;
-  background-color: #f4f4f4;
-  height: 100%;
-}
-
-.footer {
-  position: relative;
-  text-align: center;
-  bottom: 0;
+.read-the-docs {
+  color: #888;
 }
