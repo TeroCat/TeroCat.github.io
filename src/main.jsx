@@ -10,6 +10,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import { HashRouter as Router } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",
