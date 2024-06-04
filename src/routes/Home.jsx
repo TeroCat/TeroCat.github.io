@@ -1,4 +1,4 @@
-import '../App.css';
+import '../index.css';
 import vaccum from '../images/vaccum.jpg';
 
 
