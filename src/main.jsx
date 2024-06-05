@@ -8,9 +8,9 @@ import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
+  HashRouter,
 } from "react-router-dom";
 
-import { HashRouter as Router } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +31,9 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Router>
-  <Root /> 
-  </Router>
+  <React.StrictMode>
+    <HashRouter>
+      <RouterProvider router={router} />
+    </HashRouter>
+  </React.StrictMode>
 );
