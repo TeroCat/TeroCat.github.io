@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 const Navbar =()=>{
       return (
         <div className="topnav">
-          <a href="/home" target="_blank">Home</a>
-          <a href="/about" target="_blank">About</a>
-          <a href="" target="_blank">Shopping</a>
-          <a href="" target="_blank">Articles</a>
+          <a href="/home" target="">Home</a>
+          <a href="/about" target="">About</a>
+          <a href="" target="">Shopping</a>
+          <a href="" target="">Articles</a>
         </div>
       );
 }

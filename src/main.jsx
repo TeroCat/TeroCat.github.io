@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 import Root from './routes/root.jsx'
 import ErrorPage from './error-page.jsx'
 import About from './routes/About.jsx'
@@ -8,14 +8,13 @@ import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
-  HashRouter,
 } from "react-router-dom";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
+    element: <Root />,
     errorElement:<ErrorPage />,
     children: [
       {
@@ -31,9 +30,5 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <HashRouter>
-      <RouterProvider router={router} />
-    </HashRouter>
-  </React.StrictMode>
+    <RouterProvider router={router} />
 );
