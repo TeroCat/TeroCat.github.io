@@ -10,7 +10,18 @@
   align-content: center;
 }
 
+body {
+  background-image: url('./images/paw.png');
+  background-size: 30%;
+}
 
+.Main {
+  width: 75%;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  overflow: hidden;
+}
 
 .App-logo {
   height: 40vmin;
@@ -30,17 +41,35 @@
   align-items: left;
   justify-content: left;
   font-size: calc(10px + 1vmin);
-  color: white;
+  color: #FFFFFF33;
+  fill-opacity: 20%;
+  stroke-opacity: 20%;
   max-width: 100%;
 }
 
-.topnav a {
+.column h1 {
+  margin: 0;
+  text-align: left;
+  color: #F4511E;
+}
+
+.side h2 {
+  margin: 0;
+  color: #F4511E;
+  font-size: 2em;
+}
+
+.topnav a,
+.button {
   border: 1em;
   margin: .2em;
   padding: .3em;
+  font-size: calc(10px + 1vmin);
   flex-direction: row;
   text-decoration: none;
   color: white;
+  background: transparent;
+  font-family: serif;
   align-items: center;
 
 }
@@ -48,7 +77,7 @@
 .App-title {
   display: flex;
   color: #F4511E;
-  background-color: white;
+  background-color: #FFFFFF00;
   max-width: 100rem;
   margin: .3em;
   align-items: center;
@@ -58,6 +87,7 @@
 .App-title h1 {
   margin: 0em;
   padding-left: .0em;
+  text-shadow: 0px 2px 1px #000;
 }
 
 .App-link {
@@ -118,8 +148,11 @@
 
 th {
   vertical-align: top;
-  font-size: 2em;
+  font-size: 1.5em;
   border-bottom: solid;
+  border-width: 3px;
+  border-color: #f3f3f3;
+  padding: 12px;
 }
 
 Table {
@@ -136,6 +169,7 @@ img {
 
 img.Article {
   width: 4em;
+  height: 4em;
 }
 
 img.Trend {
@@ -149,12 +183,70 @@ span {
 
 .row {
   color: black;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4c6;
   height: 100%;
+  border-radius: 20px;
 }
 
 .footer {
   position: relative;
   text-align: center;
   bottom: 0;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  color: black;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #F4511E;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
 }
