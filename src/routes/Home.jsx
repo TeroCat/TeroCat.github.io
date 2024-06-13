@@ -2,11 +2,14 @@ import '../index.css';
 import vaccum from '../images/vaccum.jpg';
 import hundred from '../images/under 100.jpg';
 import wizard from '../images/wizard.jpg';
+import tree from "../images/tree.jpg";
 import suit from '../images/suit.jpg';
 import cat1 from '../images/stock/cat110.jpg';
 import cat2 from '../images/stock/cat285.jpg';
 import cat3 from '../images/stock/cat292.jpg';
 import cat4 from '../images/stock/cat301.jpg';
+import cat5 from "../images/stock/cat255.jpg";
+import cat6 from "../images/stock/cat333.jpg";
 
 function App(){
   return(
@@ -26,8 +29,8 @@ function App(){
         </div>
         <div className="column side">
           <h2>Trending Now</h2>
-          <Trend Image={cat4} Title={"2024's Red Carpet And Their Cats' Looks."} />
-          <Trend Image={'../images/stock/cat333.jpg'} Title={""} />
+          <Trend Image={suit} Title={"2024's Red Carpet And Their Cats' Looks."} />
+          <Trend Image={tree} Title={"Spice Up Your Living Experience With These Home Accent Pieces."} />
           <Trend Image={'./images/cat110.jpg'} Title={""} />
           <Trend Image={'./images/cat110.jpg'} Title={""} />
           <Trend Image={'./images/cat110.jpg'} Title={""} />

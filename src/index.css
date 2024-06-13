@@ -4,7 +4,9 @@
 
 .App {
   text-align: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   overflow: hidden;
   width: 80%;
   align-content: center;
@@ -75,11 +77,14 @@ body {
 }
 
 .App-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-size: 1.5em;
   display: flex;
   color: #F4511E;
   background-color: #FFFFFF00;
   max-width: 100rem;
-  margin: .3em;
   align-items: center;
   padding-left: .5em;
 }
@@ -160,7 +165,11 @@ Table {
   width: 100%;
 }
 
-
+span {
+  border-bottom: #333;
+  border-bottom-width: 3px;
+  border-width: 5px;
+}
 
 img {
   display: block;
