@@ -10,6 +10,9 @@ import cat3 from '../images/stock/cat292.jpg';
 import cat4 from '../images/stock/cat301.jpg';
 import cat5 from "../images/stock/cat255.jpg";
 import cat6 from "../images/stock/cat333.jpg";
+import carpet from "../images/carpet.jpg";
+import groom from "../images/groom.jpg";
+import cat7 from '../images/stock/cat4074.jpg';
 
 function App(){
   return(
@@ -25,16 +28,18 @@ function App(){
           <Articles Image={cat2} Title={"Are Cats Evil?  Science Says 'Who Cares?'"}/>
           <Articles Image={cat3} Title={"Cats Plotting To Kill You? It's Less Likely Than You Think."}/>
           <Articles Image={cat4} Title={"How To Avoid Staring Contests With Your Cat"}/>
+          <Articles Image={cat5} Title={"WetFeed's Long Batlle Fighting For Equality In Reporting"} />
+          
 
         </div>
         <div className="column side">
           <h2>Trending Now</h2>
           <Trend Image={suit} Title={"2024's Red Carpet And Their Cats' Looks."} />
           <Trend Image={tree} Title={"Spice Up Your Living Experience With These Home Accent Pieces."} />
-          <Trend Image={'./images/cat110.jpg'} Title={""} />
-          <Trend Image={'./images/cat110.jpg'} Title={""} />
-          <Trend Image={'./images/cat110.jpg'} Title={""} />
-          <Trend Image={'./images/cat110.jpg'} Title={""} />
+          <Trend Image={cat6} Title={"Angelina Jolie's Cat Spotted Without Ring!? Shock!"} />
+          <Trend Image={groom} Title={"Follow Along With Our Journalists' Beauty Routines!"} />
+          <Trend Image={cat7} Title={"Look At This Cat!"} />
+          <Trend Image={carpet} Title={"These Are The First Red Carpet Walkers That Our Reporters Clawed At."} />
         </div>
       </div>
 
